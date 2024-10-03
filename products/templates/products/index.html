@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShop</title>
+</head>
+<body>
+   <h1>MY Products</h1>
+   <ul>
+    {% for category in categories %}
+    <li>{{ category.title }} ({{ category.product_set.count }}) <ul>
+        {% for product in category.product_set.all %}
+        <li>{{ product.title }} - {{ product.price }}</li>
+        {% endfor %}
+    </ul>
+    </li>
+    {% endfor %}
+   </ul>
+<hr>
+<h1>All Products avarage price {{ price_avg }}</h1>
+   <ul>{% for product in products %}</ul>
+   <li>{{ product.title }} - {{ product.price }} - {{ product.category }}</li>
+   {% endfor %}
+</body>
+</html>

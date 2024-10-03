@@ -1,0 +1,76 @@
+[
+    {
+        "model":"products.Category",
+        "pk":1,
+        "fields":{
+            "title":"Electronics",
+            "is_active":true
+        }
+    },
+    {
+        "model":"products.Category",
+        "pk":2,
+        "fields":{
+            "title":"Books",
+            "is_active":true
+        }
+    },
+    {
+        "model":"products.Category",
+        "pk":3,
+        "fields":{
+            "title":"Beauty",
+            "is_active":true
+        }
+    },
+    {
+        "model":"products.Product",
+        "pk":1,
+        "fields":{
+            "title":"Laptop",
+            "description":"intel core-i7 , 10th gen powerful gaming Laptop",
+            "price":10000,
+            "category":1
+        }
+    },
+    {
+        "model":"products.Product",
+        "pk":2,
+        "fields":{
+            "title":"Iphone-15",
+            "description":"powerful camera with Ai feature and long time battery",
+            "price":2000,
+            "category":1
+        }
+    },
+    {
+        "model":"products.Product",
+        "pk":3,
+        "fields":{
+            "title":"DBMS",
+            "description":"Data base management system and many more",
+            "price":500,
+            "category":2
+        }
+    },
+    {
+        "model":"products.Product",
+        "pk":4,
+        "fields":{
+            "title":"English 1",
+            "description":"Basic english knowledge for All",
+            "price":300,
+            "category":2
+        }
+    },
+    {
+        "model":"products.Product",
+        "pk":5,
+        "fields":{
+            "title":"clear man",
+            "description":"shapoo for man hair ",
+            "price":300,
+            "category":3
+        }
+    }
+]
